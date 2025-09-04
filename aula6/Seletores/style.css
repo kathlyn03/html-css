@@ -1,0 +1,110 @@
+.bloco p{
+    color: rgb(0, 0, 255);
+}
+#Primeiro{
+    background-color: yellow;
+}
+.bloco1{
+    h2{
+        color: green;
+    }
+}
+li{
+    color: red;
+}
+.bloco2{
+    background-color: aquamarine;
+}
+
+.bloco3{
+    background-color: chartreuse;
+}
+.agrupamento{
+    color: blueviolet;
+}
+#centralizado{
+    color: darkmagenta;
+    text-align: center;
+}
+
+#Primeirolink{
+    color: red;
+}
+
+#Segundolink{
+    color: black;
+}
+
+.tresp{
+    font-weight: bold;
+}
+
+img{
+    border:40px ;
+    border-radius: 40;
+    height: 300px;
+}
+
+.bloco4{
+    background-color: forestgreen
+}
+
+.bloco5{
+    background-color: aqua;
+}
+.bloco6{
+    background-color: deeppink;
+}
+
+#miniTitulo{
+    font-family: Arial;
+}
+
+.negrito{
+    font-weight: bold;
+}
+
+.italico{
+    font-style: italic;
+}
+
+.sublinhado{
+    text-decoration: underline;
+}
+
+.div h3{
+    color: cornflowerblue;
+}
+
+#vermelho{
+    color: red;
+}
+
+#verde{
+    color: green;
+}
+
+#azul{
+    color: blue;
+}
+
+span{
+    font-weight: bold;
+}
+
+#caixa{
+    background-color: aqua;
+    border: solid rgb(226, 249, 22);
+}
+
+.Links{
+    text-decoration: underline;
+}
+
+.bloco7{
+    color: cornflowerblue;
+}
+
+.bloco7 a{
+color: cornflowerblue;
+}
