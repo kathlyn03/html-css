@@ -1,0 +1,144 @@
+.tabela1{
+            border: solid black;
+        }
+        .tabela1 th{
+            background-color: rgb(0, 0, 0);
+            color: white;
+        }
+        .tabela2 th{
+            background-color: gray;
+        }
+        .tabela2{
+           border: solid black;
+        }
+        .tabela3 tr{
+            color: blue;
+
+        }
+        .tabela3{
+            border: solid black;
+        }
+        .tabela4{
+            border: solid black;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .tabela5 th{
+            
+            font-size: xx-small;
+        }
+        .tabela5{
+            border: solid black;
+        }
+    
+        
+        .tabela6 td{
+            background-color: beige;
+
+        }
+        .tabela6{
+            border: solid black;
+        }
+        .tabela7 tr{
+            text-align: center;
+
+        }
+        .tabela7{
+            border: solid black;
+        }
+        .tabela8{
+            border: 20px solid black;
+        }
+        .tabela9 th{
+            background-color: red;
+
+        }
+        .tabela10{
+            padding: 15px;
+            margin: 15px;
+            border: solid black;
+        }
+        .tabela11 td{
+            font-style: italic;
+
+        }
+        .tabela11{
+             border: solid black;
+        }
+        .tabela12{
+            border: solid black;
+        
+        }
+        .tabela12 td{
+            font-weight: bold;
+        }
+        .mat{
+            background-color: blueviolet;
+
+        }
+        .Wilian{
+            background-color: blueviolet;
+        }
+        .tabela14 td{
+            background-color: green;
+
+        }
+        .tabela14{
+            border: solid black;
+        }
+        .tabela15 td{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 25px;
+          
+
+        }
+        .tabela15{
+            border: solid black;
+        }
+        .dia{
+            background-color: chocolate;
+        }
+        .lugar{
+            background-color: chocolate;
+        }
+        .lugar2{
+            background-color: chocolate;
+        }
+        .tabela16{
+            border: solid black;
+            background-color: brown;
+        }
+        .tabela17{
+            border: solid black;
+            color: bisque;
+        }
+        .tabela17 th{
+            background-color: black;
+            color: white;
+        }
+        .tabela18{
+            border: solid black;
+            text-transform: uppercase;
+
+        }
+        .tabela19{
+           font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        }
+        .tabela19{
+            border: solid black;
+        }
+        .tabela20{
+            border: solid black;
+            text-align: center;
+           
+        }
+        .tabela20 td{
+            color: crimson;
+            background-color: rgb(55, 180, 180);
+            padding: 15px;
+        }
+        .tabela20 th{
+            font-weight: bold;
+            background-color: black;
+            color: white;
+        }
