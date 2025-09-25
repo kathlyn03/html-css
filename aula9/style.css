@@ -1,0 +1,140 @@
+
+  
+    body{
+      margin: 20px;
+      background: linear-gradient(180deg, #ffffff 0%, #f2f6fb 100%);
+      color: #111;
+      line-height: 1.4;
+    }
+
+    main{
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 18px;
+    }
+
+    h1{
+      font-size: 20px;
+      margin-bottom: 8px;
+    }
+    h2{
+      font-size: 16px;
+      margin: 18px 0 8px;
+    }
+    p.context{
+      margin: 0 0 14px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    /* Base para todas as tabelas */
+    .table-wrap{
+      background: var(--card-bg);
+      padding: 14px;
+      border-radius: 10px;
+      box-shadow: 0 6px 18px rgba(20,30,50,0.06);
+      margin-bottom: 26px;
+    }
+
+    table{
+      width: 100%;
+      border-collapse: collapse;
+      text-align: center; /* centralizar texto por padrão */
+    }
+
+    th, td{
+      padding: 10px 8px;
+      border: 1px solid #d8e3ef;
+      vertical-align: middle;
+      font-size: 14px;
+    }
+
+    th{
+      background: #e9f2ff;
+      font-weight: 600;
+    }
+
+    /* Desafio 1 - Horário Escolar */
+    .schedule-table th, .schedule-table td{
+      min-width: 110px;
+    }
+
+    .schedule-table thead th{
+      background:#cfe9ff;
+      color: #08263a;
+      font-size: 14px;
+    }
+    .schedule-time{
+      font-weight: 700;
+      background:#f1f7fb;
+      color: black;
+    }
+    /* linhas alternadas para legibilidade */
+    .schedule-table tbody tr:nth-child(odd) td{
+      background: #ffffff;
+    }
+    .schedule-table tbody tr:nth-child(even) td{
+      background: #fbfdff;
+    }
+
+    /* Desafio 2 - Campeonato de Futebol */
+    .standings-table th, .standings-table td{
+      text-align: center;
+    }
+
+    /* Coluna Pontos: fonte em negrito e azul */
+    .standings-table td.pontos{
+      color: blue;
+      font-weight: 800;
+    }
+
+    /* destaque para o líder */
+    .standings-table tr.leader{
+      background-color: burlywood;
+      box-shadow: inset 0 0 0 1px rgba(0,0,0,0.04);
+    }
+
+    /* pequenas melhorias visuais */
+    .standings-table thead th{
+      background: #f0f6ff;
+    }
+
+    /* Desafio 3 - Catálogo de Produtos */
+    .catalog-table{
+      border: 10px solid black;
+     
+    }
+
+    .catalog-table th, .catalog-table td{
+      border: 1px solid #d0d7df;
+      padding: 12px;
+      text-align: center;
+    }
+
+    .catalog-table thead th{
+      background:#eef6ff;
+    }
+
+    .product-image{
+      width: 100px;
+      height: auto;
+      display: block;
+      margin: 0 auto; /* centraliza a imagem dentro da célula */
+      border-radius: 6px;
+    }
+
+    /* responsividade */
+    @media (max-width:720px){
+      .schedule-table th, .schedule-table td, .standings-table th, .standings-table td{
+        padding: 8px 6px;
+        font-size: 13px;
+      }
+      .schedule-time{ display: none; } /* esconde coluna de horário em telas muito pequenas (opcional) */
+    }
+
+    /* pequenos rótulos descritivos */
+    .note{
+      font-size: 13px;
+      color: var(--muted);
+      margin-top: 8px;
+    }

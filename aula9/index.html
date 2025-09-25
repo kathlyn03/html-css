@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+     <main>
+    <h1>📚 Desafios: Horário Escolar, Classificação de Futebol e Catálogo</h1>
+
+    <!-- DESAFIO 1 -->
+    <section class="table-wrap" aria-labelledby="horario-title">
+      <h2 id="horario-title">🎯 Desafio 1 — Horário Escolar</h2>
+      <table class="schedule-table" role="table" aria-label="Horário escolar da turma">
+        <thead>
+          <tr>
+            <th scope="col">Horário</th>
+            <th scope="col">Segunda</th>
+            <th scope="col">Terça</th>
+            <th scope="col">Quarta</th>
+            <th scope="col">Quinta</th>
+            <th scope="col">Sexta</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="schedule-time">08:00</td>
+            <td>Matemática</td>
+            <td>Português</td>
+            <td>História</td>
+            <td>Ciências</td>
+            <td>Educação Física</td>
+          </tr>
+          <tr>
+            <td class="schedule-time">09:00</td>
+            <td>Geografia</td>
+            <td>Inglês</td>
+            <td>Matemática</td>
+            <td>Artes</td>
+            <td>Português</td>
+          </tr>
+          <tr>
+            <td class="schedule-time">10:00</td>
+            <td>Física</td>
+            <td>Química</td>
+            <td>Inglês</td>
+            <td>Matemática</td>
+            <td>História</td>
+          </tr>
+          <tr>
+            <td class="schedule-time">11:00</td>
+            <td>Redação</td>
+            <td>Biologia</td>
+            <td>Projeto</td>
+            <td>Geografia</td>
+            <td>Artes</td>
+          </tr>
+          <tr>
+            <td class="schedule-time">13:00</td>
+            <td>Matemática (Reforço)</td>
+            <td>Oficina</td>
+            <td>Informatica</td>
+            <td>Educação Moral</td>
+            <td>Suporte/Tarefa</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- DESAFIO 2 -->
+    <section class="table-wrap" aria-labelledby="campeonato-title">
+      <h2 id="campeonato-title">⚽ Desafío 2 — Campeonato de Futebol</h2>
+      <table class="standings-table" role="table" aria-label="Tabela de classificação do campeonato">
+        <thead>
+          <tr>
+            <th scope="col">Pos.</th>
+            <th scope="col">Time</th>
+            <th scope="col">Pontos</th>
+            <th scope="col">Vitórias</th>
+            <th scope="col">Derrotas</th>
+            <th scope="col">Empates</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- líder com classe "leader" -->
+          <tr class="leader">
+            <td>1</td>
+            <td>Atlético Nova</td>
+            <td class="pontos">28</td>
+            <td>9</td>
+            <td>1</td>
+            <td>1</td>
+          </tr>
+
+          <tr>
+            <td>2</td>
+            <td>Vila Esperança</td>
+            <td class="pontos">24</td>
+            <td>7</td>
+            <td>3</td>
+            <td>3</td>
+          </tr>
+
+          <tr>
+            <td>3</td>
+            <td>Porto Real</td>
+            <td class="pontos">20</td>
+            <td>6</td>
+            <td>4</td>
+            <td>2</td>
+          </tr>
+
+          <tr>
+            <td>4</td>
+            <td>Fênix Futebol</td>
+            <td class="pontos">18</td>
+            <td>5</td>
+            <td>5</td>
+            <td>3</td>
+          </tr>
+
+          <tr>
+            <td>5</td>
+            <td>Estrela do Sul</td>
+            <td class="pontos">12</td>
+            <td>3</td>
+            <td>7</td>
+            <td>3</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- DESAFIO 3 -->
+    <section class="table-wrap" aria-labelledby="catalogo-title">
+      <h2 id="catalogo-title">🛍️ Desafio 3 — Catálogo de Produtos com Imagem</h2>
+      <table class="catalog-table" role="table" aria-label="Catálogo de produtos">
+        <thead>
+          <tr>
+            <th scope="col">Produto</th>
+            <th scope="col">Imagem</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Fone de Ouvido Wireless</td>
+            <td>
+              <img class="product-image" src="https://cdn.shoppub.io/cdn-cgi/image/w=1000,h=1000,q=80,f=auto/oficinadosbits/media/uploads/produtos/foto/kvdsbpel/file.png" alt="Fone de ouvido wireless — imagem" width="100" />
+            </td>
+          </tr>
+
+          <tr>
+            <td>Camiseta Streetwear</td>
+            <td>
+              <img class="product-image" src="https://www.tsetecustom.com/cdn/shop/files/1_ba11a438-4dd0-472e-a1e0-e0a3959ba5a2.png?v=1755773149" alt="Camiseta streetwear — imagem" width="100" />
+            </td>
+          </tr>
+
+          <tr>
+            <td>Shoulder Bag High</td>
+            <td>
+              <img class="product-image" src="https://images.tcdn.com.br/img/img_prod/921115/shoulder_bag_high_essential_black_15901_2_874f16388adb8aa7ce26899f2718bff0.jpg" alt="Mochila compacta — imagem" width="100" />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+  </main>
+</body>
+</html>
