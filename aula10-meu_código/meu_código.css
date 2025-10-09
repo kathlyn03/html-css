@@ -1,0 +1,19 @@
+
+body {
+font-family: Arial, sans-serif; margin: 0; 
+}
+    header, footer {
+background: #333; color: white; padding: 1em; text-align: center;
+}
+nav { 
+background: #555; padding: 0.5em; text-align: center; 
+}
+    nav a {
+color: white; margin: 0 10px; text-decoration: none;
+}
+figure { 
+text-align: center; margin: 2em 0; 
+}
+figcaption { 
+font-style: italic; margin-top: 0.5em; 
+}
