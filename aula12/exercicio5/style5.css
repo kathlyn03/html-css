@@ -1,0 +1,15 @@
+
+    body { 
+        font-family: Arial;
+         margin: 20px;
+         }
+    aside {
+      float: right;
+      width: 30%;
+      background: #f1f1f1;
+      padding: 10px;
+      border-left: 4px solid #e74c3c;
+    }
+    p { 
+        width: 65%;
+     }

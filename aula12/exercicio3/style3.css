@@ -1,0 +1,16 @@
+ 
+    header, footer {
+        background: #2c3e50;
+        color: white; 
+        padding: 15px;
+        text-align: center;
+         }
+
+    main { 
+        padding: 20px; 
+         }
+    footer a { 
+        color: #1abc9c; 
+        text-decoration: none;
+             }
+  

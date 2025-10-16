@@ -1,0 +1,16 @@
+
+    figure { 
+        display: inline-block;
+        margin: 10px;
+        text-align: center;
+         }
+
+    img {
+         width: 200px; 
+         border-radius: 8px;
+        }
+    figcaption { 
+        font-style: italic;
+         color: #555;
+               }
+  

@@ -1,0 +1,13 @@
+    body { 
+        font-family: Arial;
+         margin: 30px; 
+         background: #fafafa;
+         }
+    section {
+        border-left: 3px solid #2980b9;
+        padding-left: 15px;
+        margin-bottom: 15px; 
+        }
+    time { color: #2980b9;
+         font-weight: bold;
+         }
