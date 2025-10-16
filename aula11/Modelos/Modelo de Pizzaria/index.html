@@ -1,35 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
-<title>W3.CSS Template</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
-<style>
-body, html {height: 100%}
-body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
-.menu {display: none}
-.bgimg {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url('Imagens');
-  min-height: 90%;
-}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pizzaria La Fiamma</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+  <link rel="stylesheet" href="/código_pizzaria.css">
 </head>
+
 <body>
 
+<!-- Barra de Navegação -->
 <div class="w3-top w3-hide-small">
   <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
-    <a href="#" class="w3-bar-item w3-button">INÍCIO</a>
-    <a href="#menu" class="w3-bar-item w3-button">CADÁPIO</a>
+    <a href="#início" class="w3-bar-item w3-button">INÍCIO</a>
+    <a href="#menu" class="w3-bar-item w3-button">CARDÁPIO</a>
     <a href="#sobre" class="w3-bar-item w3-button">SOBRE</a>
-    <a href="#mtMap" class="w3-bar-item w3-button">CONTATO</a>
+    <a href="#contato" class="w3-bar-item w3-button">CONTATO</a>
   </div>
 </div>
-  
 
+<!-- Cabeçalho -->
 <header class="bgimg w3-display-container w3-grayscale-min" id="início">
   <div class="w3-display-bottomleft w3-padding">
     <span class="w3-tag w3-xlarge">Aberto das 10h às 12h</span>
@@ -44,39 +36,40 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
 <!-- Menu Container -->
 <div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
   <div class="w3-content">
-  
-       <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">O CARDÁPIO</h1>
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">O CARDÁPIO</h1>
+
+    <!-- Abas -->
     <div class="w3-row w3-center w3-border w3-border-dark-grey">
       <a href="javascript:void(0)" onclick="openMenu(event, 'Pizzas');" id="myLink">
-        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Pizzas</div>
+        <div class="w3-col s2 tablink w3-padding-large w3-hover-red">Pizzas</div>
       </a>
       <a href="javascript:void(0)" onclick="openMenu(event, 'Pasta');">
-        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Pasta</div>
+        <div class="w3-col s2 tablink w3-padding-large w3-hover-red">Pasta</div>
       </a>
       <a href="javascript:void(0)" onclick="openMenu(event, 'Entradas');">
-        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Entradas</div>
+        <div class="w3-col s2 tablink w3-padding-large w3-hover-red">Entradas</div>
       </a>
-       <a href="javascript:void(0)" onclick="openMenu(event, 'Sobremesa');">
-        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Sobremesa</div>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Sobremesa');">
+        <div class="w3-col s2 tablink w3-padding-large w3-hover-red">Sobremesa</div>
       </a>
-       <a href="javascript:void(0)" onclick="openMenu(event, 'Bebidas');">
-        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Bebidas</div>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Bebidas');">
+        <div class="w3-col s2 tablink w3-padding-large w3-hover-red">Bebidas</div>
       </a>
-       <a href="javascript:void(0)" onclick="openMenu(event, 'Opções Veganaster');">
-        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Opções Veganas</div>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Veganas');">
+        <div class="w3-col s2 tablink w3-padding-large w3-hover-red">Opções Veganas</div>
       </a>
     </div>
 
-
-    <div id="Pizza" class="w3-container menu w3-padding-32 w3-white">
+    <!-- PIZZAS -->
+    <div id="Pizzas" class="w3-container menu w3-padding-32 w3-white">
       <h1><b>Marguerita</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$120.50</span></h1>
       <p class="w3-text-grey">Tomates frescos, muçarela fresca, manjericão fresco</p>
       <hr>
-   
+
       <h1><b>Quatro queijos</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$150.50</span></h1>
-      <p class="w3-text-grey">muçarela, parmesão, pecorino, jarlsberg</p>
+      <p class="w3-text-grey">Muçarela, parmesão, pecorino, jarlsberg</p>
       <hr>
-      
+
       <h1><b>Frango</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$170.00</span></h1>
       <p class="w3-text-grey">Tomates frescos, muçarela, frango, cebolas</p>
       <hr>
@@ -86,130 +79,134 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
       <hr>
 
       <h1><b>Italiana</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$250.90</span></h1>
-      <p class="w3-text-grey">Molho pomodoro, muçarela de búfala, Passas ao vinho, Orégano, manjericão</p>
+      <p class="w3-text-grey">Molho pomodoro, muçarela de búfala, passas ao vinho, orégano, manjericão</p>
       <hr>
 
       <h1><b>Cacciatore</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$250.90</span></h1>
-      <p class="w3-text-grey">Molho pomodoro, Calabresa de javali, Alho, Orégano, manjericão, Parmesão</p>
+      <p class="w3-text-grey">Molho pomodoro, calabresa de javali, alho, orégano, manjericão, parmesão</p>
       <hr>
 
-      <h1><b>Italiana</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$250.90</span></h1>
-      <p class="w3-text-grey">Molho pomodoro, muçarela de búfala, Passas ao vinho, Orégano, manjericão</p>
+      <h1><b>Cidade da Carne</b> <span class="w3-tag w3-red w3-round">Hot!</span>
+      <span class="w3-right w3-tag w3-dark-grey w3-round">$200.00</span></h1>
+      <p class="w3-text-grey">Tomates frescos, muçarela, pepperoni picante, linguiça, carne bovina, frango</p>
       <hr>
 
-      <h1><b>Cidade da Carne</b> <span class="w3-tag w3-red w3-round">Hot!</span><span class="w3-right w3-tag w3-dark-grey w3-round">$200.00</span></h1>
-      <p class="w3-text-grey">Tomates frescos, mussarela, pepperoni picante, linguiça, carne bovina, frango</p>
-      <hr>
-
-      <h1><b>Parma</b> <span class="w3-tag w3-grey w3-round">New</span><span class="w3-right w3-tag w3-dark-grey w3-round">$210.50</span></h1>
-      <p class="w3-text-grey">Tomates frescos, mussarela, presunto de parma, bacon, rúcula fresca</p>
+      <h1><b>Parma</b> <span class="w3-tag w3-grey w3-round">New</span>
+      <span class="w3-right w3-tag w3-dark-grey w3-round">$210.50</span></h1>
+      <p class="w3-text-grey">Tomates frescos, muçarela, presunto de parma, bacon, rúcula fresca</p>
     </div>
 
+    <!-- PASTAS -->
     <div id="Pasta" class="w3-container menu w3-padding-32 w3-white">
-      <h1><b>Lasanha</b> <span class="w3-tag w3-grey w3-round">Popular</span> <span class="w3-right w3-tag w3-dark-grey w3-round">$130.50</span></h1>
-      <p class="w3-text-grey">Molho especial, mussarela, parmesão, carne moída</p>
+      <h1><b>Lasanha</b> <span class="w3-tag w3-grey w3-round">Popular</span>
+      <span class="w3-right w3-tag w3-dark-grey w3-round">$130.50</span></h1>
+      <p class="w3-text-grey">Molho especial, muçarela, parmesão, carne moída</p>
       <hr>
-   
+
       <h1><b>Ravioli</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$140.50</span></h1>
       <p class="w3-text-grey">Ravioli recheado com queijo</p>
       <hr>
-      
+
       <h1><b>Espaguete Clássico</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$110.00</span></h1>
       <p class="w3-text-grey">Tomates frescos, cebolas, carne moída</p>
       <hr>
 
       <h1><b>Macarrão com Frutos do Mar</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$2500.50</span></h1>
       <p class="w3-text-grey">Salmão, camarão, lagosta, alho</p>
-    </div>
-
-     <h1><b>Espaguete Carbonára</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$110.00</span></h1>
-      <p class="w3-text-grey">Bancon, Queijo Ralado, Creme de Leite Fresco</p>
       <hr>
 
-    <div id="Entradas" class="w3-container menu w3-padding-32 w3-white"></div>
+      <h1><b>Espaguete Carbonára</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$110.00</span></h1>
+      <p class="w3-text-grey">Bacon, queijo ralado, creme de leite fresco</p>
+    </div>
+
+    <!-- ENTRADAS -->
+    <div id="Entradas" class="w3-container menu w3-padding-32 w3-white">
       <h1><b>Bruschetta</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$8.50</span></h1>
       <p class="w3-text-grey">Pão com pesto, tomates, cebola, alho</p>
       <hr>
-      
+
       <h1><b>Pão de Alho</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$9.50</span></h1>
       <p class="w3-text-grey">Ciabatta grelhada, manteiga de alho, cebolas</p>
       <hr>
-      
+
       <h1><b>Tomozzarella</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$10.50</span></h1>
       <p class="w3-text-grey">Tomates e muçarela</p>
-    </div><br>
+    </div>
 
-     <div id="Bebidas" class="w3-container menu w3-padding-32 w3-white"></div>
+    <!-- SOBREMESAS -->
+    <div id="Sobremesa" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Pizza de Morango</b><span class="w3-right w3-tag w3-dark-grey w3-round">R$25,00</span></h1>
+      <p class="w3-text-grey">Chocolate, creme de leite, morango</p>
+      <hr>
+
+      <h1><b>Romeu e Julieta</b><span class="w3-right w3-tag w3-dark-grey w3-round">R$15,00</span></h1>
+      <p class="w3-text-grey">Requeijão, goiabada em fatias, leite condensado</p>
+      <hr>
+
+      <h1><b>Pizza Banana com Canela</b><span class="w3-right w3-tag w3-dark-grey w3-round">R$20,00</span></h1>
+      <p class="w3-text-grey">Flocos de aveia, banana-nanica em rodelas, canela em pó</p>
+    </div>
+
+    <!-- BEBIDAS -->
+    <div id="Bebidas" class="w3-container menu w3-padding-32 w3-white">
       <h1><b>Refrigerante</b><span class="w3-right w3-tag w3-dark-grey w3-round">R$25,00</span></h1>
-      <p class="w3-text-grey">Coca Cola, limão, Laranja, acompanha gelo</p>
+      <p class="w3-text-grey">Coca-Cola, limão, laranja, acompanha gelo</p>
+      <hr>
 
-       <h1><b>Energético</b><span class="w3-right w3-tag w3-dark-grey w3-round">R$15,00</span></h1>
-      <p class="w3-text-grey">Melancia, limão, Laranja, acompanha gelo</p>
+      <h1><b>Energético</b><span class="w3-right w3-tag w3-dark-grey w3-round">R$15,00</span></h1>
+      <p class="w3-text-grey">Melancia, limão, laranja, acompanha gelo</p>
+      <hr>
 
       <h1><b>Suco de Laranja</b><span class="w3-right w3-tag w3-dark-grey w3-round">R$20,00</span></h1>
       <p class="w3-text-grey">Laranjas frescas, água, gelo</p>
-
-      <div id="Sobremesa" class="w3-container menu w3-padding-32 w3-white"></div>
-      <h1><b>Pizza de morango</b><span class="w3-right w3-tag w3-dark-grey w3-round">R$25,00</span></h1>
-      <p class="w3-text-grey">Chocolate, Creme de Leite, Morango,</p>
-
-       <h1><b>Romeu e Julieta</b><span class="w3-right w3-tag w3-dark-grey w3-round">R$15,00</span></h1>
-      <p class="w3-text-grey">Requeijão, goiabada em fatias, Leite condensado,</p>
-
-      <h1><b>Pizza banana com canela</b><span class="w3-right w3-tag w3-dark-grey w3-round">R$20,00</span></h1>
-      <p class="w3-text-grey">flocos de aveia, bananas-nanicas em rodelas, canela em pó</p>
-
-      <div id="Opção Vegana" class="w3-container menu w3-padding-32 w3-white">
-      <h1><b>Pizza de Marguerita</b> <span class="w3-tag w3-grey w3-round">Popular</span> <span class="w3-right w3-tag w3-dark-grey w3-round">$130.50</span></h1>
-      <p class="w3-text-grey">Tomate-italiano, mussarela, Manjericão,</p>
-      <hr>
-
-      <h1><b>Pizza de Burrata</b> <span class="w3-tag w3-grey w3-round">Popular</span> <span class="w3-right w3-tag w3-dark-grey w3-round">$130.50</span></h1>
-      <p class="w3-text-grey">Burratas, tomates-cerejas e manjericão fresco,</p>
-      <hr>
-
-  </div>
-</div>
-
-<!-- About Container -->
-<div class="w3-container w3-padding-64 w3-red w3-grayscale w3-xlarge" id="about">
-  <div class="w3-content">
-    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">About</h1>
-    <p>A Pizzaria La Fiamma nasceu do sonho de Enzo Moretti, um italiano apaixonado por massa, sabor e boas histórias. Chegando ao Brasil nos anos 90, ele criou uma receita única de massa artesanal, leve e crocante, que conquistou toda a cidade de Santa Aurora.
-Mais do que servir pizzas, Enzo queria criar um lugar onde as pessoas se sentissem em casa — e conseguiu. Hoje, sob o comando de seu filho Luca, a La Fiamma une tradição e inovação, mantendo viva a essência familiar e o sabor autêntico de suas receitas.</p>
-    <p><strong>O Chefe?</strong> Mr. Moretti<img src="/Modelo de Pizzaria/Imagens/chef.jpg" style="width:150px" class="w3-circle w3-right" alt="Chef"></p>
-    <p>Cada pizza é feita com carinho, e cada chama do forno representa o mesmo propósito desde o primeiro dia:
-alimentar o corpo e aquecer o coração..</p>
-    <img src="/Modelo de Pizzaria/Imagens/onepage_restaurant.jpg" style="width:100%" class="w3-margin-top w3-margin-bottom" alt="Restaurant">
-    <h1><b>Horário de funcionamento</b></h1>
-    
-           <p>Seg & Ter FECHADO</p>
-        <p>Quarta 10:00 - 24:00</p>
-        <p>Quinta 10:00 - 24:00</p>
-      </div>
-      <div class="w3-col s6">
-        <p>Sexta 10:00 - 12:00</p>
-        <p>Sábado 10:00 - 23:00</p>
-        <p>Domingo Fechado</p>
-      </div>
     </div>
+
+    <!-- VEGANAS -->
+    <div id="Veganas" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Pizza de Marguerita</b> <span class="w3-tag w3-grey w3-round">Popular</span>
+      <span class="w3-right w3-tag w3-dark-grey w3-round">$130.50</span></h1>
+      <p class="w3-text-grey">Tomate italiano, muçarela, manjericão</p>
+      <hr>
+
+      <h1><b>Pizza de Burrata</b> <span class="w3-tag w3-grey w3-round">Popular</span>
+      <span class="w3-right w3-tag w3-dark-grey w3-round">$130.50</span></h1>
+      <p class="w3-text-grey">Burratas, tomates-cerejas e manjericão fresco</p>
+    </div>
+
   </div>
 </div>
 
+<!-- SOBRE -->
+<div class="w3-container w3-padding-64 w3-red w3-grayscale w3-xlarge" id="sobre">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">SOBRE</h1>
+    <p>A Pizzaria La Fiamma nasceu do sonho de Enzo Moretti, um italiano apaixonado por massa, sabor e boas histórias...</p>
+    <p><strong>O Chefe?</strong> Mr. Moretti
+      <img src="https://i.pinimg.com/1200x/85/79/e7/8579e7b83eeaaddaefffd92bea7864f8.jpg" style="width:150px" class="w3-circle w3-right" alt="Chef">
+    </p>
+    <p>Cada pizza é feita com carinho...</p>
+    <img src="https://i.pinimg.com/736x/24/7b/45/247b45aa906f677c993d5a86b917495f.jpg" style="width:100%" class="w3-margin-top w3-margin-bottom" alt="Restaurant">
+    <h1><b>Horário de funcionamento</b></h1>
+    <p>Seg & Ter FECHADO</p>
+    <p>Quarta 10:00 - 24:00</p>
+    <p>Quinta 10:00 - 24:00</p>
+    <p>Sexta 10:00 - 12:00</p>
+    <p>Sábado 10:00 - 23:00</p>
+    <p>Domingo Fechado</p>
+  </div>
+</div>
 
-<img src="/Modelo de Pizzaria/Imagens/map.jpg" class="w3-image w3-greyscale" style="width:100%;" id="myMap">
-
-<!-- Contato -->
-<div class="w3-container w3-padding-64 w3-blue-grey w3-grayscale-min w3-xlarge">
+<!-- CONTATO -->
+<div class="w3-container w3-padding-64 w3-blue-grey w3-grayscale-min w3-xlarge" id="contato">
   <div class="w3-content">
     <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Contato</h1>
     <p>Encontre-nos em algum endereço ou ligue para (15) 98960-0348</p>
-    <p><span class="w3-tag">Aviso!</span> Oferecemos serviço completo de buffet para qualquer evento, grande ou pequeno. Entendemos suas necessidades e cuidamos para que a comida tenha ótima aparência e sabor.</p>
-    <p class="w3-xxlarge"><strong>Reserve</strong> uma mesa, peça o especial do dia ou envie uma mensagem:</p>
+    <p><span class="w3-tag">Aviso!</span> Oferecemos serviço completo de buffet...</p>
+    <p class="w3-xxlarge"><strong>Reserve</strong> uma mesa...</p>
     <form action="/action_page.php" target="_blank">
       <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Nome" required name="Name"></p>
       <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="Número de pessoas" required name="People"></p>
-      <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Data e hora" required name="date" value="2020-11-16T20:00"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" required name="date"></p>
       <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Mensagem / Requisitos especiais" required name="Message"></p>
       <p><button class="w3-button w3-light-grey w3-block" type="submit">ENVIAR MENSAGEM</button></p>
     </form>
@@ -218,19 +215,17 @@ alimentar o corpo e aquecer o coração..</p>
 
 <!-- Rodapé -->
 <footer class="w3-center w3-black w3-padding-48 w3-xxlarge">
+  <p>© 2025 Pizzaria La Fiamma - Todos os direitos reservados</p>
 </footer>
 
 <script>
-// Menu com Abas
 function openMenu(evt, menuName) {
   var i, x, tablinks;
   x = document.getElementsByClassName("menu");
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";
-  }
+  for (i = 0; i < x.length; i++) { x[i].style.display = "none"; }
   tablinks = document.getElementsByClassName("tablink");
-  for (i = 0; i < x.length; i++) {
-     tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
   }
   document.getElementById(menuName).style.display = "block";
   evt.currentTarget.firstElementChild.className += " w3-red";
@@ -240,4 +235,3 @@ document.getElementById("myLink").click();
 
 </body>
 </html>
-
