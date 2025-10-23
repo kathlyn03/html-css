@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Kathlyn Santos - Portfólio</title>
+</head>
+<body>
+    <button class="mode-toggle" onclick="toggleMode()">✏️ Editar</button>
+    <div class="save-indicator" id="saveIndicator">✓ Alterações salvas</div>
+
+    <div class="container view-mode">
+        <aside class="sidebar">
+            <div class="photo-container">
+                <div class="photo-placeholder" id="photoDisplay">👤</div>
+                <label class="photo-upload">
+                    <input type="file" accept="image/*" onchange="uploadPhoto(event)">
+                    📷
+                </label>
+            </div>
+
+            <h1 class="editable" contenteditable="false" id="name">Kathlyn Santos Novais</h1>
+            <div class="subtitle editable" contenteditable="false" id="title">Estudante de Desenvolvimento de Sistemas</div>
+
+            <div class="sidebar-section">
+                <div class="sidebar-title">Contato</div>
+                <div class="contact-item">
+                    <span class="editable" contenteditable="false" id="email">kathlynsantosnovais@gmail.com</span>
+                </div>
+                <div class="contact-item">
+                    <span class="editable" contenteditable="false" id="phone">(11) 97202-8819</span>
+                </div>
+            </div>
+
+            <div class="sidebar-section">
+                <div class="sidebar-title">Habilidades</div>
+                <div id="skillsContainer">
+                    <div class="skill-item editable" contenteditable="false">JavaScript</div>
+                    <div class="skill-item editable" contenteditable="false">HTML</div>
+                    <div class="skill-item editable" contenteditable="false">CSS</div>
+                    <div class="skill-item editable" contenteditable="false">Arduino</div>
+                </div>
+                <button class="add-btn" onclick="addSkill()">+ Adicionar Habilidade</button>
+            </div>
+
+            <div class="sidebar-section">
+                <div class="sidebar-title">Redes Sociais</div>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/novais_kathlyn/" class="social-link" target="_blank" title="Instagram">📷</a>
+                    <a href="https://github.com/kathlyn03/html-css.git" class="social-link" target="_blank" title="GitHub">💻</a>
+                </div>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <!-- Navigation Tabs -->
+            <div class="nav-tabs">
+                <button class="nav-tab active" onclick="switchTab('sobre')" data-tab="sobre">
+                    👤 Sobre Mim
+                </button>
+                <button class="nav-tab" onclick="switchTab('experiencia')" data-tab="experiencia">
+                    💼 Experiência
+                </button>
+                <button class="nav-tab" onclick="switchTab('projetos')" data-tab="projetos">
+                    🚀 Projetos
+                </button>
+                <button class="nav-tab" onclick="switchTab('habilidades')" data-tab="habilidades">
+                    ⚡ Habilidades
+                </button>
+                <button class="nav-tab" onclick="switchTab('contato')" data-tab="contato">
+                    📱 Contato
+                </button>
+            </div>
+
+            <!-- Tab: Sobre Mim -->
+            <div class="tab-content active" id="tab-sobre">
+                <section class="section">
+                    <h2 class="section-title">Sobre Mim</h2>
+                    <p class="about-text editable" contenteditable="false" id="about">
+                        Sou uma pessoa que valoriza intensamente cada momento ao lado das pessoas que amo, buscando sempre fortalecer os laços familiares e aproveitar experiências significativas. Adoro viajar e explorar novos lugares, além de apreciar a música como uma forma de inspiração e relaxamento. Tenho grande interesse pela área de tecnologia, na qual busco constantemente crescer profissionalmente, aprofundar meus conhecimentos em programação e me aperfeiçoar em inovação. Minha motivação maior vem da minha família, que me inspira a conquistar uma carreira sólida, alcançar estabilidade financeira e construir um futuro seguro e próspero, equilibrando realização pessoal e profissional.
+                    </p>
+                </section>
+            </div>
+
+            <!-- Tab: Experiência -->
+            <div class="tab-content" id="tab-experiencia">
+                <section class="section">
+                    <h2 class="section-title">Experiência Profissional/Cursos</h2>
+                    <div id="experienceContainer">
+                        <div class="timeline-item">
+                            <div class="timeline-title editable" contenteditable="false">Programação e robótica - Escola Millenium Tecnologia & Educação Profissional</div>
+                            <div class="timeline-subtitle editable" contenteditable="false">Abril 2022 - Novembro 2022</div>
+                            <p class="timeline-description editable" contenteditable="false">
+                                O curso de Programação e Robótica desenvolve habilidades em tecnologia, lógica e criatividade, ensinando os alunos a programar e montar robôs enquanto aprendem de forma prática e inovadora.
+                            </p>
+                            <button class="delete-btn" onclick="deleteElement(this)">🗑️ Excluir</button>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-title editable" contenteditable="false">Por dentro da segurança cibernética, Fluência - Fundamentos da inteligência artificial, Excel básico, Desvendando a descarbonizacão e Competência transversal – Segurança no trabalho</div>
+                            <div class="timeline-subtitle editable" contenteditable="false">Maio 2024 - Julho 2024</div>
+                            <p class="timeline-description editable" contenteditable="false">
+                                Esses cursos oferecem formação em segurança cibernética, fundamentos de inteligência artificial, Excel básico, práticas de descarbonização e segurança no trabalho, preparando os alunos com habilidades técnicas, responsabilidade e consciência ambiental.
+                            </p>
+                            <button class="delete-btn" onclick="deleteElement(this)">🗑️ Excluir</button>
+                        </div>
+                    </div>
+                    <button class="add-btn" onclick="addExperience()">+ Adicionar Experiência</button>
+                </section>
+            </div>
+
+            <!-- Tab: Projetos -->
+            <div class="tab-content" id="tab-projetos">
+                <section class="section">
+                    <h2 class="section-title">Projetos em Destaque</h2>
+                    <div class="project-grid" id="projectsContainer">
+                        <div class="project-card">
+                            <div class="project-title editable" contenteditable="false">Protótipo de um Web site</div>
+                            <p class="project-description editable" contenteditable="false">
+                                Ele apresenta destinos naturais, atividades sustentáveis e dicas de viagem, com fotos, mapas e informações interativas, promovendo a exploração consciente da natureza.
+                            </p>
+                            <button class="delete-btn" onclick="deleteElement(this)">🗑️ Excluir</button>
+                        </div>
+                        <div class="project-card">
+                            <div class="project-title editable" contenteditable="false">Termômetro e medidor de umidade</div>
+                            <p class="project-description editable" contenteditable="false">
+                                Esse projeto monitora a temperatura e a umidade de um ambiente e exiba as leituras em um display LCD.
+                            </p>
+                            <button class="delete-btn" onclick="deleteElement(this)">🗑️ Excluir</button>
+                        </div>
+                    </div>
+                    <button class="add-btn" onclick="addProject()">+ Adicionar Projeto</button>
+                </section>
+            </div>
+
+            <!-- Tab: Habilidades -->
+            <div class="tab-content" id="tab-habilidades">
+                <section class="section">
+                    <h2 class="section-title">Minhas Habilidades</h2>
+                    <div id="skillsContainerMain" style="display: flex; flex-wrap: wrap; gap: 10px;">
+                        <div class="skill-item editable" contenteditable="false">JavaScript</div>
+                        <div class="skill-item editable" contenteditable="false">HTML</div>
+                        <div class="skill-item editable" contenteditable="false">CSS</div>
+                        <div class="skill-item editable" contenteditable="false">Arduino</div>
+                    </div>
+                    <button class="add-btn" onclick="addSkillMain()">+ Adicionar Habilidade</button>
+                </section>
+            </div>
+
+            <!-- Tab: Contato -->
+            <div class="tab-content" id="tab-contato">
+                <section class="section">
+                    <h2 class="section-title">Entre em Contato</h2>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; margin-top: 30px;">
+                        <div style="background: var(--bg-main); padding: 30px; border-radius: 15px; border: 2px solid var(--border); transition: all 0.3s ease;">
+                            <div style="font-size: 40px; margin-bottom: 15px;">📧</div>
+                            <div style="font-weight: 700; font-size: 18px; margin-bottom: 10px; color: var(--primary);">Email</div>
+                            <div class="editable" contenteditable="false" id="emailContact" style="color: var(--text-secondary);">kathlynsantosnovais@gmail.com</div>
+                        </div>
+                        <div style="background: var(--bg-main); padding: 30px; border-radius: 15px; border: 2px solid var(--border); transition: all 0.3s ease;">
+                            <div style="font-size: 40px; margin-bottom: 15px;">📱</div>
+                            <div style="font-weight: 700; font-size: 18px; margin-bottom: 10px; color: var(--primary);">Telefone</div>
+                            <div class="editable" contenteditable="false" id="phoneContact" style="color: var(--text-secondary);">(11) 97202-8819</div>
+                        </div>
+                        <div style="background: var(--bg-main); padding: 30px; border-radius: 15px; border: 2px solid var(--border); transition: all 0.3s ease;">
+                            <div style="font-size: 40px; margin-bottom: 15px;">🌐</div>
+                            <div style="font-weight: 700; font-size: 18px; margin-bottom: 10px; color: var(--primary);">Redes Sociais</div>
+                            <div class="social-links" style="justify-content: flex-start;">
+                                <a href="https://www.instagram.com/novais_kathlyn/" class="social-link" target="_blank" title="Instagram">📷</a>
+                                <a href="https://github.com/kathlyn03/html-css.git" class="social-link" target="_blank" title="GitHub">💻</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        let photoData = null;
+        let autoSaveTimeout = null;
+
+        // Carregar dados salvos
+        window.addEventListener('load', loadData);
+
+        function toggleMode() {
+            const container = document.querySelector('.container');
+            const toggle = document.querySelector('.mode-toggle');
+            const editables = document.querySelectorAll('.editable');
+            
+            if (container.classList.contains('view-mode')) {
+                container.classList.remove('view-mode');
+                container.classList.add('edit-mode');
+                toggle.textContent = '👁️ Visualizar';
+                editables.forEach(el => {
+                    if (!el.classList.contains('social-link')) {
+                        el.contentEditable = 'true';
+                    }
+                });
+            } else {
+                container.classList.remove('edit-mode');
+                container.classList.add('view-mode');
+                toggle.textContent = '✏️ Editar';
+                editables.forEach(el => {
+                    if (!el.classList.contains('social-link')) {
+                        el.contentEditable = 'false';
+                    }
+                });
+                saveData();
+            }
+        }
+
+        function uploadPhoto(event) {
+            const file = event.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    photoData = e.target.result;
+                    const photoDisplay = document.getElementById('photoDisplay');
+                    photoDisplay.innerHTML = `<img src="${photoData}" class="profile-photo" alt="Foto de perfil">`;
+                    saveData();
+                };
+                reader.readAsDataURL(file);
+            }
+        }
+
+        function addSkill() {
+            const container = document.getElementById('skillsContainer');
+            const newSkill = document.createElement('div');
+            newSkill.className = 'skill-item editable';
+            newSkill.contentEditable = 'true';
+            newSkill.textContent = 'Nova Habilidade';
+            
+            const deleteBtn = document.createElement('button');
+            deleteBtn.className = 'delete-btn';
+            deleteBtn.textContent = '×';
+            deleteBtn.onclick = function() { deleteElement(this); };
+            
+            newSkill.appendChild(deleteBtn);
+            container.appendChild(newSkill);
+            newSkill.focus();
+            
+            // Selecionar texto
+            const range = document.createRange();
+            range.selectNodeContents(newSkill);
+            const sel = window.getSelection();
+            sel.removeAllRanges();
+            sel.addRange(range);
+        }
+
+        function addSkillMain() {
+            const container = document.getElementById('skillsContainerMain');
+            const newSkill = document.createElement('div');
+            newSkill.className = 'skill-item editable';
+            newSkill.contentEditable = 'true';
+            newSkill.textContent = 'Nova Habilidade';
+            
+            const deleteBtn = document.createElement('button');
+            deleteBtn.className = 'delete-btn';
+            deleteBtn.textContent = '×';
+            deleteBtn.onclick = function() { deleteElement(this); };
+            
+            newSkill.appendChild(deleteBtn);
+            container.appendChild(newSkill);
+            newSkill.focus();
+            
+            // Selecionar texto
+            const range = document.createRange();
+            range.selectNodeContents(newSkill);
+            const sel = window.getSelection();
+            sel.removeAllRanges();
+            sel.addRange(range);
+            
+            // Sincronizar com sidebar
+            addSkill();
+        }
+
+        function switchTab(tabName) {
+            // Remover active de todas as tabs
+            document.querySelectorAll('.nav-tab').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            
+            document.querySelectorAll('.tab-content').forEach(content => {
+                content.classList.remove('active');
+            });
+            
+            // Adicionar active na tab selecionada
+            document.querySelector(`[data-tab="${tabName}"]`).classList.add('active');
+            document.getElementById(`tab-${tabName}`).classList.add('active');
+            
+            // Scroll suave para o topo do conteúdo
+            document.querySelector('.main-content').scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+
+        function addProject() {
+            const container = document.getElementById('projectsContainer');
+            const newProject = document.createElement('div');
+            newProject.className = 'project-card';
+            newProject.innerHTML = `
+                <div class="project-title editable" contenteditable="true">Novo Projeto</div>
+                <p class="project-description editable" contenteditable="true">Descrição do projeto e tecnologias utilizadas...</p>
+                <button class="delete-btn" onclick="deleteElement(this)">🗑️ Excluir</button>
+            `;
+            container.appendChild(newProject);
+            newProject.querySelector('.project-title').focus();
+        }
+
+        function addExperience() {
+            const container = document.getElementById('experienceContainer');
+            const newExp = document.createElement('div');
+            newExp.className = 'timeline-item';
+            newExp.innerHTML = `
+                <div class="timeline-title editable" contenteditable="true">Cargo - Empresa</div>
+                <div class="timeline-subtitle editable" contenteditable="true">Período</div>
+                <p class="timeline-description editable" contenteditable="true">Descrição das responsabilidades e conquistas...</p>
+                <button class="delete-btn" onclick="deleteElement(this)">🗑️ Excluir</button>
+            `;
+            container.appendChild(newExp);
+            newExp.querySelector('.timeline-title').focus();
+        }
+
+        function deleteElement(btn) {
+            if (confirm('Tem certeza que deseja excluir este item?')) {
+                const parent = btn.closest('.skill-item, .project-card, .timeline-item');
+                parent.style.transition = 'all 0.3s ease';
+                parent.style.opacity = '0';
+                parent.style.transform = 'scale(0.8)';
+                setTimeout(() => {
+                    parent.remove();
+                    saveData();
+                }, 300);
+            }
+        }
+
+        function saveData() {
+            const data = {
+                photo: photoData,
+                name: document.getElementById('name').textContent,
+                title: document.getElementById('title').textContent,
+                email: document.getElementById('email').textContent,
+                phone: document.getElementById('phone').textContent,
+                about: document.getElementById('about').textContent,
+                skills: Array.from(document.querySelectorAll('#skillsContainer .skill-item')).map(el => el.textContent.replace('×', '').trim()),
+                experiences: Array.from(document.querySelectorAll('#experienceContainer .timeline-item')).map(el => ({
+                    title: el.querySelector('.timeline-title').textContent,
+                    subtitle: el.querySelector('.timeline-subtitle').textContent,
+                    description: el.querySelector('.timeline-description').textContent
+                })),
+                projects: Array.from(document.querySelectorAll('#projectsContainer .project-card')).map(el => ({
+                    title: el.querySelector('.project-title').textContent,
+                    description: el.querySelector('.project-description').textContent
+                }))
+            };
+
+            showSaveIndicator();
+        }
+
+        function loadData() {
+            // Função preparada para futuras implementações de persistência
+        }
+
+        function showSaveIndicator() {
+            const indicator = document.getElementById('saveIndicator');
+            indicator.classList.add('show');
+            setTimeout(() => {
+                indicator.classList.remove('show');
+            }, 2000);
+        }
+
+        // Auto-save ao editar
+        document.addEventListener('input', function(e) {
+            if (e.target.classList.contains('editable')) {
+                clearTimeout(autoSaveTimeout);
+                autoSaveTimeout = setTimeout(saveData, 1000);
+            }
+        });
+    </script>
+</body>
+</html>
