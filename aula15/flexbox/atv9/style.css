@@ -1,0 +1,94 @@
+.item1{
+    background-color: black;
+    width: 150px;
+    height: 150px;
+    padding: 20px;
+    margin-right: 20px;
+}
+
+.item2{
+    background-color: black;
+    width: 150px;
+    height: 150px;
+    padding: 20px;
+    margin-right: 20px;
+}
+
+.item3{
+    background-color: black;
+    width: 150px;
+    height: 150px;
+    padding: 20px;
+    margin-right: 20px;
+}
+
+.item4{ 
+    background-color: black;
+    width: 150px;
+    height: 150px;
+    padding: 20px;
+    margin-right: 20px;
+}
+
+.item5{
+      background-color: black;
+    width: 150px;
+    height: 150px;
+    padding: 20px;
+    margin-right: 20px;
+}
+
+.item6{
+    display: flex;   
+    background-color: black;
+    width: 150px;
+    height: 150px;
+    color: white;
+}
+
+.item7{
+     display: flex;   
+    background-color: black;
+    width: 150px;
+    height: 150px;
+    color: white;
+}
+
+.item8{
+     display: flex;   
+    background-color: black;
+    width: 150px;
+    height: 150px;
+    color: white;
+}
+
+.item9{
+     display: flex;   
+    background-color: black;
+    width: 150px;
+    height: 150px;
+    color: white;
+}
+
+.item10{
+    display: flex;   
+    background-color: black;
+    width: 150px;
+    height: 150px;
+    color: white;
+}
+
+
+.item11{
+    display: flex;   
+    background-color: black;
+    width: 150px;
+    height: 150px;
+    color: white;
+}
+
+.container1{
+    justify-content: space-between;
+    display: flex;
+    padding: 20px;
+}

@@ -1,0 +1,48 @@
+.item1{
+    flex: 1;
+    background-color: black;
+    text-align: center;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.item2{
+    flex: 1;
+    background-color: black;
+    text-align: center;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.item3{
+    flex: 1;
+    background-color: black;
+    text-align: center;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.item4{
+    flex: 1;
+    background-color: black;
+    text-align: center;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container1{
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: flex-start;
+    display: flex;
+    gap: 10px;
+}
