@@ -1,0 +1,20 @@
+.footer {
+  display: flex;
+  justify-content: space-between; /* separa as 3 seções */
+  align-items: center;
+  background-color: #222;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+.footer .card {
+  background-color: #333;
+  color: white;
+  width: 30%;           /* três cards lado a lado */
+  height: 120px;
+  margin: 0;            /* remove margens extras */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}

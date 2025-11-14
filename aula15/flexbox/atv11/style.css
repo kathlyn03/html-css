@@ -1,0 +1,7 @@
+.alto {
+  height: 300px;              /* container alto */
+  background-color: lightgray;
+  display: flex;              /* ativa o flexbox */
+  justify-content: center;    /* centraliza horizontalmente */
+  align-items: center;        /* centraliza verticalmente */
+}
